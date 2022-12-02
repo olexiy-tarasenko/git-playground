@@ -48,6 +48,9 @@ while not is_game_over():
         continue
 
     if guess in full_list:
+        if guess in guesses
+            print("You already entered this word")
+            continue
         guessed += 1
         guesses.append(guess)
         if guessed == WORDS_TO_WIN:
@@ -57,3 +60,5 @@ while not is_game_over():
     else:
         errors += 1
         print(f"Oops :( No such word, you have {ERRORS_TO_LOSE - errors} lives more")
+        print("You are a loser")
+        
